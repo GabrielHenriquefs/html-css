@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            background-color: blanchedalmond;
+        }
+        header{
+            background-color: lightsalmon;
+            padding: 20px;
+            margin: auto;
+            width: 600px;
+            text-align: left;
+            
+        }
+        main{
+            background-color: cadetblue;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        footer{
+            background-color: rgb(223, 129, 7);
+        }
+        
+        article{
+            background-color: rgba(83, 83, 165, 0.466);
+        }
+        article > aside{
+            background-color: rgb(33, 219, 142);
+        }
+        nav{
+            background-color: rgba(179, 255, 176, 0.479);
+            padding: 10px;
+            margin: 15px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.384) ;
+
+        }
+        
+        li > a{
+            text-decoration: none;
+            color: rgb(211, 65, 248);
+            font-weight: bold;
+            
+        }
+        li > a:hover{
+            color: rgb(255, 0, 0);
+            text-decoration: underline;
+        }
+        h1{
+            text-align: center;
+        }
+        footer > p{
+            text-align: center;
+            margin: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 100px;
+            background-color: brown;
+            border-radius: 50%;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <h1>Cabeçalho</h1>
+        <nav>
+            <h2>Seção de navegação (NAV)</h2>
+            <ol>
+                <li>
+                    <p>
+                        Propósito: Agrupar links de navegação.
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="#">Link redirecionamento 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Link de redirecionamento 2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        Benefício: Melhora a acessibilidade e a estrutura semântica do site.
+                    </p>
+                </li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <h2>
+            Conteudo Principal (MAIN)
+        </h2>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Titulo do Artigo (ARTICLE)</h2>
+                <p>Artigo Alternativo (ARTICLE)</p>
+                <aside>
+                    <p>Artigo escrito por gbpo (ASIDE filho de ARTICLE)</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Desenvolvido por gbpo (FOOTER)</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
