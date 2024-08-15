@@ -5,25 +5,54 @@
     padding: 0px;
     margin: 0px;
 }
-
+html, body{
+    min-height: 100vh;
+}
 header{
-    padding: 60px;
-    font-size: 40px;
     background-color: black;
     color: white;
     text-align: center;
-    margin-bottom: ;
-}
-header a{
-    color: white;
-    text-decoration: none;
-}
-header a:hover{
-    text-decoration: underline;
+    font-size: 40px;
+    
 }
 header h1{
+    font-variant: small-caps;
     margin-bottom: -80px;
+    padding-top: 50px;
 }
 header p{
-    font-size: 15px;
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-left: 30px;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.normal{
+    background-color: rgba(5, 2, 2, 0.253);
+    color: black;
+}
+.imagem{
+    background-color: chocolate;
+    color: white;
+}
+.imagem p{
+    background-color: rgba(0, 0, 0, 0.637);
+    width: 400px;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
