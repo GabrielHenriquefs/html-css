@@ -1,58 +1,80 @@
 @charset "UTF-8";
 
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Roboto+Slab:wght@100..900&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3:  "Sriracha", cursive;;
+}
+
 *{
     padding: 0px;
     margin: 0px;
 }
 html, body{
     min-height: 100vh;
+    
 }
 header{
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     
 }
 header h1{
+    line-height: 10px;
+    font-size: 7vw;
     font-variant: small-caps;
-    margin-bottom: -80px;
-    padding-top: 50px;
+    font-family: var(--fonte2);
+    
 }
-header p{
-    padding-bottom: 50px;
-}
-a{
-    color: white;
+header pre p, header pre a {
+    color: #ffffff; 
+    font-size: 18px;
     text-decoration: none;
-    font-weight: bolder;
 }
 a:hover{
     text-decoration: underline;
 }
 section{
-    padding-left: 30px;
-    line-height: 2em;
     padding-top: 10vh;
     padding-bottom: 10vh;
-}
-.normal{
-    background-color: rgba(5, 2, 2, 0.253);
-    color: black;
-}
-.imagem{
-    background-color: chocolate;
-    color: white;
-}
-.imagem p{
-    background-color: rgba(0, 0, 0, 0.637);
-    width: 400px;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 25px;
 }
 
-footer{
+section.normal{
+    background-color: wheat;
+    color: black;
+}
+
+section.imagem{
+    
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.541);
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 15px;
+    
+    
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+
+footer, footer a{
     background-color: black;
     text-align: center;
     color: white;
-    padding: 10px;
+    text-decoration: none;
 }
