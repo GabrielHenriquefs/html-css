@@ -61,15 +61,29 @@ section.imagem{
     
     color: wheat;
     background-color: rgba(0, 0, 0, 0.541);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
     display: inline-block;
     padding: 15px;
-    
-    
-    background-color: rgba(0, 0, 0, 0.466);
+    background-color: rgba(0, 0, 0, 0.767);
+    text-shadow: 2px 2px 0px black;
 }
+section#img01 {
+    background-image: url(imagens/joaninha.png);
+    
+}
+section#img02 {
+    background-image: url(imagens/carta.png);
+   
+
+}
+
 
 
 footer, footer a{
